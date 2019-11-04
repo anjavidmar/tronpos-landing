@@ -14,14 +14,19 @@
         <div class="site">
             <header>
                 <div class="header__hero">
-                    <img class="mobile" src="./assets/images/header-hero_mobile.jpg" />
-                    <img class="desktop" src="./assets/images/header-hero_desktop.jpg" />
+                    <img class="mobile" src="./assets/images/header-hero_mobile.jpg" alt="alt text" />
+                    <img class="desktop" src="./assets/images/header-hero_desktop.jpg" alt="alt text" />
                     <div class="text-box">
                         <div class="text-box__inner">
-                            <p class="tagline font--med">
+                            <p class="tagline tagline--mobile font--med">
                                 <span class="text--blue-background">Davčna blagajna, ki vam pohitri poslovni proces za 30% brez dodatnega dela iz vaše strani.</span><br />
                                 <span class="text--blue-background">Sedaj že samo za <span class="text--yellow">29,90&euro;</span>/mesec.
                                 </span>
+                            </p>
+                            <p class="tagline tagline--desktop font--med">
+                                <span class="text--blue-background">Davčna blagajna, ki vam pohitri poslovni proces</span><br />
+                                <span class="text--blue-background">za 30% brez dodatnega dela iz vaše strani.</span><br />
+                                <span class="text--blue-background">Sedaj že samo za <span class="text--yellow">29,90&euro;</span>/mesec.</span>
                             </p>
                         </div>
                     </div>
@@ -33,6 +38,7 @@
                 </div>
             </header>
             <main>
+                <!-- 1 -->
                 <section>
                     <div class="form-container">
                         <div class="text-container">
@@ -41,11 +47,11 @@
                     </div>
                     <div class="description-container">
                         <div class="text-container">
-                            <img src="./assets/images/tronpos-gastro-bar1.png" />
+                            <img src="./assets/images/tronpos-gastro-bar1.2.png" />
                             <div class="description__text-container">
                                 <h3>KAJ TOČNO JE TRONpos GASTRO BAR?</h3>
                                 <p class="font--med">
-                                    ( Stvar je zelo preprosta...)
+                                    <span>( Stvar je zelo preprosta...)</span>
                                 </p>
                                 <p>
                                     Če ste lastnik manjšega gostinjskega lokala in in imate občutek, da vam vodenje zalog, dodajanje novih artiklov in analiza prometa vzamejo preveč časa je TRONpos GASTRO BAR kot naročen za vas.
@@ -97,6 +103,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- 2 -->
                 <section>
                     <div class="video-container">
                         <div class="text-container">
@@ -107,6 +114,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- 3 -->
                 <section>
                     <div class="testimoials-container">
                         <div class="text-container">
@@ -117,44 +125,50 @@
                                 <div class="testimonial-container">
                                     <div class="textimonial">
                                         <div><img src="./assets/images/testimonial-headshot1.jpg" />
-                                        <p>Miha, 32 let,<br /> Ljubljana</p></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</p>
+                                        <p>Iva, 45 let,<br /> Ljubljana</p></div>
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                                     </div>
                                 </div>
                                 <div class="testimonial-container">
                                     <div class="textimonial">
                                         <div><img src="./assets/images/testimonial-headshot2.jpg" />
-                                        <p>Iva, 45 let,<br /> Maribor</p></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</p>
+                                        <p>Miha, 32 let,<br /> Maribor</p></div>
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                                     </div>
                                 </div>
                                 <div class="testimonial-container">
                                     <div class="textimonial">
                                         <div><img src="./assets/images/testimonial-headshot3.jpg" />
                                         <p>Maja, 29 let,<br /> Ljubljana</p></div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua”</p>
+                                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <!-- 4 -->
                 <section>
                     <div class="main__hero">
-                        <img src="./assets/images/main-hero.jpg" alt="alt text" />
+                        <img class="mobile" src="./assets/images/main-hero_mobile.jpg" alt="alt text" />
+                        <img class="desktop" src="./assets/images/main-hero_desktop.jpg" alt="alt text" />
                     </div>
                     <div class="details-contaier">
                         <div class="heading heading--yellow-bg">
                             <h3 class="lowercase">Kaj se potrebuje za pripravo blagajne</h3>
                         </div>
                         <div class="text-container">
-                            <p>Za celotni izvedbo gostinskega sistema v vašem lokalu, poskrbi TRONpos ekipa. Programe namestimo, prilagodimo vašim potrebam in željam, ter opravimo izobraževanje kadra za uporabo programov.</p>
-                            <ul class="styled">
-                                <li>Cenik artiklov,</li>
-                                <li>Spisek uporabnikov z davčnimi številkami,</li>
-                                <li>Interni akt,</li>
-                                <li>Namensko digitalno potrdilo za davčno potrjevanje računov.</li>
-                            </ul>
+                            <div class="p-container">
+                                <p>Za celotni izvedbo gostinskega sistema v vašem lokalu, poskrbi TRONpos ekipa. Programe namestimo, prilagodimo vašim potrebam in željam, ter opravimo izobraževanje kadra za uporabo programov.</p>
+                            </div>
+                            <div class="ul-container">
+                                <ul class="styled">
+                                    <li>Cenik artiklov,</li>
+                                    <li>Spisek uporabnikov z davčnimi številkami,</li>
+                                    <li>Interni akt,</li>
+                                    <li>Namensko digitalno potrdilo za davčno potrjevanje računov.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="form-container">
