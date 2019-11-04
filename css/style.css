@@ -526,13 +526,9 @@ p.xxl {
   padding: 0 3%;
 }
 
-ul {
-  text-align: left;
-}
 ul.benefits {
-  margin: 0 auto;
+  margin-left: 4%;
   padding: 1em 0;
-  width: 95%;
 }
 ul.benefits li {
   margin-bottom: 1.5em;
@@ -545,6 +541,7 @@ ul.benefits li img {
 }
 ul.benefits li span {
   display: inline-block;
+  text-align: left;
   vertical-align: middle;
   width: 81%;
 }
@@ -553,6 +550,7 @@ ul.styled {
   list-style-type: disc;
   margin-left: 1.5em;
   padding-top: 1em;
+  text-align: left;
 }
 ul.styled li {
   margin-bottom: 0.75em;
@@ -733,15 +731,13 @@ footer .logo {
 }
 @media screen and (min-width: 550px) {
   ul.benefits {
-    margin: 0 auto;
-    padding: 1em 0;
-    width: 100%;
+    margin-left: 0;
   }
   ul.benefits li img {
     margin-right: 0.75em;
   }
   ul.benefits li span {
-    width: 87%;
+    width: 87.5%;
   }
 
   header .mobile {
@@ -759,6 +755,7 @@ footer .logo {
     display: inline-block;
     margin: 2em auto 0.5em;
     max-width: 30em;
+    padding-left: 1em;
     vertical-align: middle;
   }
   main section:nth-child(4) .mobile {
