@@ -1,29 +1,39 @@
 function ml_webform_success_1641546(){
     var r=ml_jQuery||jQuery;
-    r(".ml-subscribe-form-1641546 .row-success").show(),r(".ml-subscribe-form-1641546 .row-form").hide()
+    r(".ml-subscribe-form-1641546 .row-success").show(),r(".ml-subscribe-form-1641546 .row-form").hide();
 }
 
+var h = window.innerHeight;
+var w = window.innerWidth;
+
+console.log('screen height = ' + h, 'screen width = ' + w);
+
+var videoHeading = document.getElementById('video-heading');
+var videoHeading_w = videoHeading.offsetWidth;
+var video = document.getElementById('video');
+var video_w = videoHeading_w - 4;
+var video_h = video_w * 0.5625;
+
+//<iframe width="560" height="315" [so... w * 0.5625 = h]
+
+if (w > 850) {
+    video_w = 780;
+    video_h = video_w * 0.5625;
+}
+
+video.width = video_w;
+video.height = video_h;
+
 $(document).ready(function(){
-    // Add smooth scrolling to all links
     $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-            // Prevent default anchor click behavior
             event.preventDefault();
-
-            // Store hash
             var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
             }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
             });
-        } // End if
+        }
     });
 });
