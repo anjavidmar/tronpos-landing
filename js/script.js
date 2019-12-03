@@ -1,15 +1,29 @@
-var h = window.innerHeight;
-var w = window.innerWidth;
+function ml_webform_success_1641546(){
+    var r=ml_jQuery||jQuery;
+    r(".ml-subscribe-form-1641546 .row-success").show(),r(".ml-subscribe-form-1641546 .row-form").hide()
+}
 
-console.log('hello world!');
-console.log('screen height = ' + h, 'screen width = ' + w);
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
 
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-// var tagline = document.getElementsByTagName('p')[0];
-// var tagline_text = '<span class="text--blue-background">Davčna blagajna, ki vam pohitri poslovni proces</span><br /><span class="text--blue-background">za 30% brez dodatnega dela iz vaše strani.</span><br /><span class="text--blue-background">Sedaj že samo za <span class="text--yellow">29,90&euro;</span>/mesec.</span>'
+            // Store hash
+            var hash = this.hash;
 
-// console.log(tagline);
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
 
-// if (w > 800) {
-//     tagline.innerHTML = tagline_text;
-// }
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+        } // End if
+    });
+});
